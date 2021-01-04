@@ -54,8 +54,9 @@ class Queue{
    		else {
       		cout<<"All elements in queue are : ";
       		for (int i = queueFront; i <= queueRear; i++)
-      		cout<< queueArr[i]<<" " << endl;
+      		cout<< queueArr[i]<<" ";
    		}
+		cout<< endl;
 	}
 };
 
