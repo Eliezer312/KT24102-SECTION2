@@ -6,6 +6,7 @@ Lab Assignment 2 - Exercise 3 */
 
 using namespace std;
 
+//linked list class which store items in transaction
 class POSNode{
 	string item;
 	float price;
@@ -13,11 +14,13 @@ class POSNode{
 
 	public:
 	POSNode(){};
-	
+
+//add items 
 void addItem (string newItem){
 	item = newItem;
 };
 
+//add price of items
 void itemPrice (float newPrice){
 	price = newPrice;
 };
@@ -39,6 +42,7 @@ POSNode *Next (){
 };
 };
 
+//linked list class for list which store items 
 class POSList{
 	POSNode *head;
 
