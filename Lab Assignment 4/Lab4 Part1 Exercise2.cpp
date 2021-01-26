@@ -6,13 +6,15 @@ Lab Assignment 4 - Part 1 Exercise 2 */
 
 using namespace std;
 
+//class 
 class Queue{
 	private:
 		int queueArr[15];
 		int queueFront, queueRear, n;
 	
 	public:
-
+	
+	//constructor
 	Queue(){
 		queueFront = -1;
 		queueRear = -1;
@@ -21,6 +23,8 @@ class Queue{
 			queueArr[i] = 0;
 		}
 	}
+	
+	//receive an integer and check if queue is full, if not then insert the integer to the queue array
 	void Insert() {
    		int val;
    		if (queueRear == n - 1) {
@@ -35,7 +39,8 @@ class Queue{
      		queueArr[queueRear] = val;
 		}
 	}
-
+	
+	//delete front element from queue if front!=rear (empty)
 	void Delete() {
    		if (queueFront == - 1 || queueFront > queueRear) {
       		cout<< "No element to be deleted";
@@ -47,6 +52,7 @@ class Queue{
    		}
 	}
 
+	//if rear!=front, then print out the queue array
 	void Display() {
    		if (queueFront == - 1) {
    			cout<<"Queue is empty"<< endl;
