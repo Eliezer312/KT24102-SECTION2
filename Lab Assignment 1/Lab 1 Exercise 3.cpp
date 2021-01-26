@@ -5,6 +5,7 @@ Lab Assignment 1 - Exercise 3 */
 #include <iostream>
 using namespace std;
 
+	//function where it accept the array as pointer and return the average of the array
 	double getAverage(int *array, int SIZE) {
 		int i, sum =0;
 		double average;
@@ -15,6 +16,8 @@ using namespace std;
 		return average;
 	}
 	
+	//receive the address of x and y as pointer
+	//swap value of x and y if x>y
 	void swap (int *n, int *m) {
 		int temp;
 		temp = *n;
