@@ -8,6 +8,7 @@ Lab Assignment 3 - Part 1 Exercise 2 */
 
 using namespace std;
 
+//function to verify parenthesis symbols are opened and closed perfectly
 bool pairSymbol(char opening,char closing)
 {
 	if(opening == '(' && closing == ')') 
@@ -20,6 +21,7 @@ bool pairSymbol(char opening,char closing)
 		return false;
 }
 
+//function to verify input parenthesis symbols are opened and closed perfectly
 bool paranthesisBalanced(string symbol)
 {
 	stack<char> S;
